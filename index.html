@@ -23,12 +23,12 @@
     margin-bottom: 8px;
     letter-spacing: 1px;
   }
-  h2 {
+  .mensaje-navidad {
     color: #378944;
     text-align: center;
-    margin-bottom: 32px;
-    font-size: 1.1em;
-    font-weight: 400;
+    margin-bottom: 28px;
+    font-size: 1.10em;
+    font-weight: 500;
   }
   label {
     margin-top: 15px;
@@ -95,19 +95,19 @@
     margin-bottom: 18px;
   }
 </style>
-<!-- Fuente decorativa opcional -->
 <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="navidad-emoji">🎄🍬🎁</div>
   <h1>Endulzada Navideña</h1>
-  <h2>¡Consulta tu regalo dulce de integración y celebra la Navidad en equipo!</h2>
+  <div class="mensaje-navidad">
+    Ingresa tu cédula y descubre a quién debes endulzar, para celebrar la Navidad en equipo.
+  </div>
 
   <label for="cedulaInput">Ingresa tu Cédula</label>
   <input type="text" id="cedulaInput" placeholder="Ejemplo: 1010205368" autocomplete="off" disabled />
 
   <button type="button" id="buscarBtn" onclick="buscarAsignado()" disabled>Buscar</button>
-
   <div id="resultado">Cargando datos navideños, por favor espera...</div>
 
 <script>
@@ -157,5 +157,6 @@ fetch('datos.json')
 </script>
 </body>
 </html>
+
 
 
